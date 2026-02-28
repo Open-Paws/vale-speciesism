@@ -1,4 +1,4 @@
-# Speciesism — Vale Style Package
+# No Animal Violence — Vale Style Package
 
 A [Vale](https://vale.sh) style package that detects speciesist language in prose and suggests clearer, more professional alternatives.
 
@@ -7,7 +7,7 @@ A [Vale](https://vale.sh) style package that detects speciesist language in pros
 Add to your `.vale.ini`:
 
 ```ini
-Packages = https://github.com/Open-Paws/vale-speciesism/releases/latest/download/Speciesism.zip
+Packages = https://github.com/Open-Paws/vale-no-animal-violence/releases/latest/download/NoAnimalViolence.zip
 ```
 
 Then run:
@@ -20,9 +20,9 @@ vale sync
 
 | Rule | Level | Description |
 |------|-------|-------------|
-| `Speciesism.AnimalIdioms` | warning | Violent animal idioms with professional alternatives |
-| `Speciesism.AnimalMetaphors` | warning | Animal-as-object metaphors with clearer alternatives |
-| `Speciesism.TechTerminology` | suggestion | Technical terms with more precise alternatives |
+| `NoAnimalViolence.AnimalIdioms` | warning | Violent animal idioms with professional alternatives |
+| `NoAnimalViolence.AnimalMetaphors` | warning | Animal-as-object metaphors with clearer alternatives |
+| `NoAnimalViolence.TechTerminology` | suggestion | Technical terms with more precise alternatives |
 
 ## Configuration
 
@@ -30,15 +30,15 @@ Enable all rules:
 
 ```ini
 [*]
-BasedOnStyles = Speciesism
+BasedOnStyles = NoAnimalViolence
 ```
 
 Enable specific rules only:
 
 ```ini
 [*]
-Speciesism.AnimalIdioms = YES
-Speciesism.TechTerminology = NO
+NoAnimalViolence.AnimalIdioms = YES
+NoAnimalViolence.TechTerminology = NO
 ```
 
 ## Academic Foundation
